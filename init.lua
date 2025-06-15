@@ -1044,7 +1044,10 @@ vim.o.smartindent = true -- Automatically insert indent on new lines
 --
 --
 --
---
+-- this to map oo to act like escape key (faster way to go to normal mod)
+-- vim.api.nvim_set_keymap("n", "oo", "<Esc>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'oo', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'oo', '<Esc>', { noremap = true, silent = true })
 --
 --
 --
